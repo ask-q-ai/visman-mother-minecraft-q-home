@@ -1,0 +1,242 @@
+---
+type: visualization
+viewport:
+  fit: cover
+background:
+  skydome: true
+  builtInTexture: stars
+  skydomeRadius: 1400
+atmosphere:
+  preset: night
+  fogColor: "#0C1224"
+  fogNear: 70
+  fogFar: 520
+  density: 0.0028
+  exposure: 0.84
+camera:
+  position:
+    x: 0
+    y: 1.5
+    z: 36
+  lookAt:
+    x: 0
+    y: 0
+    z: 0
+  fov: 58
+  enableControls: true
+  minDistance: 8
+  maxDistance: 220
+lights:
+- type: ambient
+  color: 16777215
+  intensity: 0.92
+- type: directional
+  color: 16777215
+  intensity: 1.4
+  position:
+    x: 20
+    y: 16
+    z: 24
+- type: directional
+  color: 8956671
+  intensity: 0.45
+  position:
+    x: -22
+    y: -10
+    z: -20
+threeJsLayer:
+- id: q-voxel-instanced
+  context: threejs
+  type: box
+  size:
+    width: 2.304
+    height: 2.304
+    depth: 2.304
+  material:
+    color: "#9BA7B3"
+    usePbr: true
+    roughness: 0.58
+    metalness: 0.24
+    emissive: "#28303B"
+    emissiveIntensity: 0.22
+  instanceGroup:
+    seed: 11037
+    instances:
+    - position:
+        x: -4.8
+        y: 8.4
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: -2.4
+        y: 8.4
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: 0.0
+        y: 8.4
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 2.4
+        y: 8.4
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: 4.8
+        y: 8.4
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: -7.199999999999999
+        y: 6.0
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: -4.8
+        y: 6.0
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: 4.8
+        y: 6.0
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: 7.199999999999999
+        y: 6.0
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: -7.199999999999999
+        y: 3.5999999999999996
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: 7.199999999999999
+        y: 3.5999999999999996
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: -7.199999999999999
+        y: 1.2
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 7.199999999999999
+        y: 1.2
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: -7.199999999999999
+        y: -1.2
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: 0.0
+        y: -1.2
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 7.199999999999999
+        y: -1.2
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: -7.199999999999999
+        y: -3.5999999999999996
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: 2.4
+        y: -3.5999999999999996
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: 7.199999999999999
+        y: -3.5999999999999996
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: -7.199999999999999
+        y: -6.0
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: -4.8
+        y: -6.0
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 4.8
+        y: -6.0
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 7.199999999999999
+        y: -6.0
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: -4.8
+        y: -8.4
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: -2.4
+        y: -8.4
+        z: 0.0
+      color: "#87919c"
+    - position:
+        x: 0.0
+        y: -8.4
+        z: 0.0
+      color: "#a4aeb8"
+    - position:
+        x: 2.4
+        y: -8.4
+        z: 0.0
+      color: "#78828d"
+    - position:
+        x: 4.8
+        y: -8.4
+        z: 0.0
+      color: "#98a2ad"
+    - position:
+        x: 6.0
+        y: -6.0
+        z: 0.6
+      color: "#7f8993"
+    - position:
+        x: 8.4
+        y: -8.4
+        z: 1.2
+      color: "#6f7983"
+    variation:
+      positionJitter:
+        x: 0.02
+        y: 0.02
+        z: 0.02
+      rotationJitter:
+        x: 0.01
+        y: 0.01
+        z: 0.01
+      scaleJitter:
+        x: 0.01
+        y: 0.01
+        z: 0.01
+domLayer:
+- id: mother-minecraft-title
+  context: dom
+  type: div
+  position:
+    x: 24
+    y: 24
+  properties:
+    text: MOTHER // MINECRAFT Q
+  style:
+    color: "#f5f8ff"
+    fontSize: 28
+    fontWeight: '700'
+    fontFamily: monospace
+    textShadow: 0 0 14px rgba(138,190,255,0.8)
